@@ -24,13 +24,13 @@ public class Disco {
 	}
 	
 	//METODO QUE CALCULA Y DEVUELVE A TRAVEZ DEL RADIO, EL PERIMETRO DE UN CIRCULO
-	private double calcularPerimetroDeUnCirculo(double radio) {
+	public double calcularPerimetroDeUnCirculo(double radio) {
 		
 		return 2*(Math.PI)*radio;		//FORMULA: 2 x PI x RADIO
 		
 	}
 	//METODO QUE CALCULA Y DEVUELVE A TRAVEZ DEL RADIO, LA SUPERFICIE DE UN CIRCULO 
-	private double calcularSuperficieDeUnCirculo(double radio) {
+	public double calcularSuperficieDeUnCirculo(double radio) {
 		
 		return Math.PI*(radio*radio);	//FORMULA: PI x RADIO^2
 		
