@@ -40,7 +40,7 @@ class TestDeDisco {
 		
 		Disco discoPrueba = new Disco(6.55,7);
 		
-		double perimetroInteriorEsperado = discoPrueba.calcularPerimetroDeUnCirculo(6.55);
+		double perimetroInteriorEsperado = 2*(Math.PI)*6.55;
 		
 		double perimetroInteriorObtenido = discoPrueba.calcularPerimetroInteriorDelDisco();
 		
@@ -53,7 +53,7 @@ class TestDeDisco {
 		
 		Disco discoPrueba = new Disco(6.55,7);
 		
-		double perimetroExteriorEsperado = discoPrueba.calcularPerimetroDeUnCirculo(7);
+		double perimetroExteriorEsperado = 2*(Math.PI)*7;
 		
 		double perimetroExteriorObtenido = discoPrueba.calcularPerimetroExteriorDelDisco();
 		
@@ -66,8 +66,8 @@ class TestDeDisco {
 		
 		Disco discoPrueba = new Disco(6.55,7);
 		
-		double superficieInterna = discoPrueba.calcularSuperficieDeUnCirculo(6.55);
-		double superficieExterna = discoPrueba.calcularSuperficieDeUnCirculo(7);
+		double superficieInterna = Math.PI*(6.55*6.55); 
+		double superficieExterna = Math.PI*(7*7);
 		double superficieEsperada = superficieInterna + superficieExterna;
 		double superficieObtenida = discoPrueba.calcularSuperficieDelDisco();
 		
